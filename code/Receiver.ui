@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1078</width>
+    <height>986</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-629</y>
+         <width>1211</width>
+         <height>1529</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="30" column="7">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;ECDSA Information:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="33" column="0">
+         <widget class="QTextBrowser" name="out_device_ip">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="sizeIncrement">
+           <size>
+            <width>0</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="40" column="7">
+         <widget class="QPushButton" name="pB_save_pub_key">
+          <property name="text">
+           <string>save key</string>
+          </property>
+         </widget>
+        </item>
+        <item row="39" column="7">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>public key:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;ATECC508A Configuration:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="31" column="0">
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Device Setttings:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QPushButton" name="pB_start_auto">
+          <property name="text">
+           <string>Start Automatic Programm</string>
+          </property>
+         </widget>
+        </item>
+        <item row="28" column="0">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="32" column="0">
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>device IP:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="0">
+         <widget class="QTextBrowser" name="out_data_zone">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="34" column="0">
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>device Port pictures:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="0">
+         <widget class="QTextBrowser" name="out_serial_number">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>config zone:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>data zone:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="10">
+         <widget class="QLineEdit" name="out_pic_time">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="0">
+         <widget class="QTextBrowser" name="out_conf_zone">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="7">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>date:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="35" column="8" rowspan="4" colspan="3">
+         <widget class="QTextBrowser" name="out_signature">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>124</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="9">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>time:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="8">
+         <widget class="QLineEdit" name="out_pic_date">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="7" rowspan="5" colspan="5">
+         <widget class="QLabel" name="display">
+          <property name="minimumSize">
+           <size>
+            <width>721</width>
+            <height>521</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>1500</width>
+            <height>700</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="lineWidth">
+           <number>3</number>
+          </property>
+          <property name="midLineWidth">
+           <number>3</number>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="7">
+         <widget class="QPushButton" name="pB_save_current_pic">
+          <property name="text">
+           <string>save current picture</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="8">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;saved as: &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="36" column="0">
+         <widget class="QLabel" name="label_20">
+          <property name="text">
+           <string>device Port public key:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="31" column="8" rowspan="4" colspan="3">
+         <widget class="QTextBrowser" name="out_hash_value">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>124</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="logo">
+          <property name="minimumSize">
+           <size>
+            <width>318</width>
+            <height>303</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>1000000</width>
+            <height>10000000</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="6">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>100</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="14" column="7" rowspan="2" colspan="2">
+         <widget class="QLabel" name="label_19">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Pictures Metadata:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="39" column="8" rowspan="4" colspan="3">
+         <widget class="QTextBrowser" name="out_public_key">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>124</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_18">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Simulation Tools:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="35" column="7">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>signature:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="31" column="7">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>hash value:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="23" column="6">
+         <widget class="QWidget" name="widget" native="true"/>
+        </item>
+        <item row="27" column="7" rowspan="3" colspan="3">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>50</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="7" column="7" rowspan="2">
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="21" column="9">
+         <widget class="QLabel" name="label_sensor_4">
+          <property name="text">
+           <string>sensor 4:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="7">
+         <widget class="QLabel" name="label_sensor_3">
+          <property name="text">
+           <string>sensor 3:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="7">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>current counter:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="8">
+         <widget class="QLineEdit" name="out_current_counter">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="7">
+         <widget class="QLabel" name="label_sensor_1">
+          <property name="text">
+           <string>sensor 1:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="8">
+         <widget class="QLineEdit" name="out_sensor_1">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="8">
+         <widget class="QLineEdit" name="out_sensor_3">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="10">
+         <widget class="QLineEdit" name="out_sensor_2">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="10">
+         <widget class="QLineEdit" name="out_sensor_4">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="9">
+         <widget class="QLabel" name="label_sensor_2">
+          <property name="text">
+           <string>sensor 2:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="label_21">
+          <property name="text">
+           <string>counter status:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_17">
+          <property name="text">
+           <string>current date-time:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QTextBrowser" name="out_current_date_time">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="35" column="0">
+         <widget class="QLineEdit" name="in_device_port_pic">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="37" column="0">
+         <widget class="QLineEdit" name="in_device_port_pubkey">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_16">
+          <property name="text">
+           <string>signature status:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QTextBrowser" name="out_count_status">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="label_22">
+          <property name="text">
+           <string>date-time status:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QTextBrowser" name="out_sign_status">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0">
+         <widget class="QTextBrowser" name="out_date_time_status">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="9">
+         <widget class="QLabel" name="label_23">
+          <property name="text">
+           <string>prev. counter:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="19" column="10">
+         <widget class="QTextBrowser" name="out_prev_counter">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="9" colspan="2">
+         <widget class="QTextBrowser" name="out_save_name">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="7">
+         <widget class="QLabel" name="label_24">
+          <property name="text">
+           <string>sender name:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="8">
+         <widget class="QLineEdit" name="out_sender_name">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(233, 233, 233);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>serial number:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1078</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <layoutdefault spacing="9" margin="13"/>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>10</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>

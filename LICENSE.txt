@@ -1,0 +1,16 @@
+(c) 2019 Peter Lang, Felix Meissner, Harald Bogesch, Christian Remmele
+
+Supported by HSA_innos - Institute for innovative Safety and Security
+at Augsburg University of Applied Sciences
+
+The use of the code is at your own discretion with the exception of commercial use.
+Commercial use is prohibited in all cases.
+In addition, the license agreements of the following contents have to be observed:
+
+  - "cryptoauthlib"   (c) Microchip Technology Inc. and its subsidiaries.
+  - "cryptoauthtools" (c) Microchip Technology Inc. and its subsidiaries.
+  - "PyQT5"           (c) Riverbank Computing Limited.
+  - "pics"            (c) pixabay
+
+No liability is accepted for any damage to hardware or software caused by the code.
+
