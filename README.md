@@ -1,10 +1,13 @@
 # Project "Signed File Transfer" on KUNBUS Revolution Pi with ATECC Security Chip
 
 **Course:** Sichere Industriesysteme
+
 **Degree Program:** Systems Engineering
+
 **University:** Augsburg University of Applied Sciences
 
 **Submission Date:** Feb. 11. 2019
+
 **Authors:** Peter Lang, Felix Meißner, Harald Bogesch, Christian Remmele
 
 The project is written in Python3.
